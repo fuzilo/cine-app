@@ -45,4 +45,6 @@ git clone https://github.com/seu-usuario/tmdb-movie-app.git
 ### 5. Documentação da API
 
 * **Documentação completa da API do TMDB:** [https://developer.themoviedb.org/docs/getting-started](https://developer.themoviedb.org/docs/getting-started)
-* **Informações detalhadas sobre a API de filmes:** [https://developer.themoviedb.org/reference/movie-details](https://developer.themoviedb.org/reference/movie-details)
+* **Detalhes do filme:** [https://developer.themoviedb.org/reference/movie-details](https://developer.themoviedb.org/reference/movie-details)
+* **Filmes Populares:** [https://developer.themoviedb.org/reference/movie-popular-list](https://developer.themoviedb.org/reference/movie-popular-list)
+* **Pesquisa de filmes:** [https://developer.themoviedb.org/reference/search-multi](https://developer.themoviedb.org/reference/search-multi)
