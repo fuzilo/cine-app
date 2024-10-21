@@ -1,4 +1,4 @@
-package com.fatec.cineapp.framework.util
+package com.fatec.cineapp.core.util
 
 object Constants {
     const val API_KEY_PARAM = "api_key"

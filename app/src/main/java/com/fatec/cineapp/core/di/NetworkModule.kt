@@ -1,8 +1,8 @@
-package com.fatec.cineapp.framework.di
+package com.fatec.cineapp.core.di
 
 import com.fatec.cineapp.BuildConfig
-import com.fatec.cineapp.framework.data.remote.MovieService
-import com.fatec.cineapp.framework.data.remote.ParamsInterceptor
+import com.fatec.cineapp.core.data.remote.MovieService
+import com.fatec.cineapp.core.data.remote.ParamsInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

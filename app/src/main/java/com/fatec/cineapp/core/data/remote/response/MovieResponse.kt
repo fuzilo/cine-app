@@ -1,4 +1,4 @@
-import com.fatec.cineapp.framework.data.remote.model.MovieResult
+import com.fatec.cineapp.core.data.remote.model.MovieResult
 import com.google.gson.annotations.SerializedName
 
 data class MovieResponse(

@@ -1,7 +1,7 @@
-package com.fatec.cineapp.framework.data.remote
+package com.fatec.cineapp.core.data.remote
 
 import com.fatec.cineapp.BuildConfig
-import com.fatec.cineapp.framework.util.Constants
+import com.fatec.cineapp.core.util.Constants
 import okhttp3.Interceptor
 import okhttp3.Response
 

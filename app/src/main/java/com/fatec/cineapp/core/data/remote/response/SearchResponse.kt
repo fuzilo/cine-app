@@ -1,6 +1,6 @@
-package com.fatec.cineapp.framework.data.remote.response
+package com.fatec.cineapp.core.data.remote.response
 
-import com.fatec.cineapp.framework.data.remote.model.SearchResult
+import com.fatec.cineapp.core.data.remote.model.SearchResult
 import com.google.gson.annotations.SerializedName
 
 data class SearchResponse(
