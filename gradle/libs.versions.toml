@@ -49,11 +49,8 @@ okhttp = "5.0.0-alpha.2"
 loggingInterceptor = "5.0.0-alpha.2"
 
 # DI - Hilt
-hiltAndroid = "2.45"
+hiltAndroid = "2.51.1"
 hiltNavigationCompose = "1.2.0"
-daggerHiltCompiler = "2.45"
-hiltCompiler = "1.0.0"
-daggerHiltAndroid = "2.45"
 
 
 # Room - Nao mexa na versao
@@ -116,10 +113,9 @@ com-squareup-okhttp3-okhttp = { group = "com.squareup.okhttp3", name = "okhttp",
 com-squareup-okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
 
 # DI - Hilt
-com-google-dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
-androidx-hilt-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
-com-google-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "daggerHiltCompiler" }
-androidx-hilt-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltCompiler" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
 
 # Room
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
@@ -129,7 +125,6 @@ androidx-room-room-compiler = { group = "androidx.room", name = "room-compiler",
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 
 
 

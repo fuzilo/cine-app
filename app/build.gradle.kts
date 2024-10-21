@@ -4,7 +4,8 @@ import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.org.jetbrains.kotlin.kapt)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 val apiKeyPropertiesFile = rootProject.file("apiKey.properties")
@@ -123,10 +124,10 @@ dependencies {
     implementation(libs.com.squareup.okhttp3.logging.interceptor)
 
     // DI - Hilt
-    implementation(libs.com.google.dagger.hilt.android)
-    implementation(libs.androidx.hilt.hilt.navigation.compose)
-    kapt(libs.com.google.dagger.hilt.compiler)
-    kapt(libs.androidx.hilt.hilt.compiler)
+    // Hilt
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 
 
     // Room
