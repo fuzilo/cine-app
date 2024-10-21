@@ -1,7 +1,7 @@
-import androidx.compose.foundation.background
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -12,6 +12,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.fatec.cineapp.core.presentation.navigation.BottomNavItem
 import com.fatec.cineapp.ui.theme.black
+import com.fatec.cineapp.ui.theme.red
 import com.fatec.cineapp.ui.theme.yellow
 
 
@@ -25,7 +26,7 @@ fun BottomNavigationBar(
         BottomNavItem.MovieFavorite
     )
     NavigationBar(
-        contentColor  = yellow,
+        contentColor = yellow,
         containerColor = black
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -40,10 +41,14 @@ fun BottomNavigationBar(
                     }
                 },
                 icon = {
-                    Icon(imageVector = destination.icon, contentDescription = null)
+                    Icon(
+                        imageVector = destination.icon,
+                        contentDescription = null,
+                        tint = yellow
+                    )
                 },
                 label = {
-                    Text(text = destination.title)
+                    Text(text = destination.title, color = yellow)
                 }
             )
         }
