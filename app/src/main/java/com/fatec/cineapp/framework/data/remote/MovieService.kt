@@ -1,7 +1,7 @@
-package com.fatec.cineapp.core.data.remote
+package com.fatec.cineapp.framework.data.remote
 
 import MovieResponse
-import com.fatec.cineapp.core.data.remote.response.MovieDetailResponse
+import com.fatec.cineapp.framework.data.remote.response.MovieDetailResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

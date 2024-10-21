@@ -1,9 +1,9 @@
-package com.fatec.cineapp.core.data.remote.response
+package com.fatec.cineapp.framework.data.remote.response
 
-import com.fatec.cineapp.core.data.remote.model.Genre
-import com.fatec.cineapp.core.data.remote.model.ProductionCompany
-import com.fatec.cineapp.core.data.remote.model.ProductionCountry
-import com.fatec.cineapp.core.data.remote.model.SpokenLanguage
+import com.fatec.cineapp.framework.data.remote.model.Genre
+import com.fatec.cineapp.framework.data.remote.model.ProductionCompany
+import com.fatec.cineapp.framework.data.remote.model.ProductionCountry
+import com.fatec.cineapp.framework.data.remote.model.SpokenLanguage
 import com.google.gson.annotations.SerializedName
 
 class MovieDetailResponse (

@@ -1,4 +1,4 @@
-package com.fatec.cineapp.core.data.remote.model
+package com.fatec.cineapp.framework.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 
