@@ -1,8 +1,15 @@
+
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.org.jetbrains.kotlin.kapt)
 }
+
+val apiKeyPropertiesFile = rootProject.file("apiKey.properties")
+val apiKeyProperties = Properties()
+apiKeyProperties.load(apiKeyPropertiesFile.inputStream())
 
 android {
     namespace = "com.fatec.cineapp"
@@ -19,6 +26,14 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        //buildConfigField("String", "API_KEY", """ + apiKeyProperties.getProperty("API_KEY") + """)
+        buildConfigField("String", "API_KEY", apiKeyProperties.getProperty("API_KEY"))
+        buildConfigField("String", "BASE_URL", apiKeyProperties.getProperty("BASE_URL"))
+        buildConfigField("String", "BASE_URL_IMAGE", apiKeyProperties.getProperty("BASE_URL_IMAGE"))
+    }
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {

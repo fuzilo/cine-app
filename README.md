@@ -30,14 +30,14 @@ git clone https://github.com/seu-usuario/tmdb-movie-app.git
 ### 4. Configuração
 
 1. **API Key:**
-    * Abra o arquivo `app/src/main/java/com/example/tmdb_movie_app/BuildConfig.kt`.
+    * Crie na raiz do projeto o arquivo  `\cine-app\apiKey.properties`.
     * Defina o valor da chave API do TMDB na variável `API_KEY`:
     ```kotlin
     const val API_KEY = "sua_api_key"
     ```
 
 2. **URLs base:**
-    * As URLs base para a API do TMDB e para as imagens dos filmes estão definidas no arquivo `app/src/main/java/com/example/tmdb_movie_app/data/Constants.kt`:
+    * As URLs base para a API do TMDB e para as imagens dos filmes estão definidas no arquivo `\cine-app\apiKey.properties`:
     ```kotlin
     const val BASE_URL = "https://api.themoviedb.org/3/"
     const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/w1280"

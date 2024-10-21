@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.fatec.cineapp.ui.theme.CineAppTheme
 
 class MainActivity : ComponentActivity() {
+    val apiKey = BuildConfig.API_KEY
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
