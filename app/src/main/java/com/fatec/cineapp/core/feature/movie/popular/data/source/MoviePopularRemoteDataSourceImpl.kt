@@ -4,8 +4,9 @@ import MovieResponse
 import com.fatec.cineapp.core.data.remote.MovieService
 import com.fatec.cineapp.core.feature.movie.popular.domain.source.MoviePopularRemoteDataSource
 import com.fatec.cineapp.core.paging.MoviePagingSource
+import javax.inject.Inject
 
-class MoviePopularRemoteDataSourceImpl constructor(
+class MoviePopularRemoteDataSourceImpl @Inject constructor(
     private val service: MovieService
 ): MoviePopularRemoteDataSource {
 
